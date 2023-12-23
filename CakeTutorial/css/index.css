@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+:root {
+  --header-color-1: #FFFFFF;
+  --header-color-2: #FFA1DB;
+  --header-color-3: #421A09;
+  --text-header-color-1: #000000;
+  --text-color-1: #000000;
+  --text-color-2: #000000;
+  --text-color-3: #FFFFFF;
+  --element-main-color-1: #FFFFFF;
+  --element-main-color-2: #FFA1DB;
+  --element-main-color-3: #421A09;
+  --element-advanced-color-1: #97E6E9;
+  --element-advanced-color-2: #EDE0FF;
+  --element-advanced-color-3: #762F10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif !important;
+}
+
+header {
+  height: 60px;
+}
+header img {
+  width: 20px;
+  cursor: pointer;
+}
+header label {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.main {
+  display: block;
+  height: 80vh;
+}
+.main .welcome {
+  font-size: 1.5em;
+}
+.main .mainH2 {
+  font-size: 1.2em;
+}
+.main .buttonRow {
+  height: 60vh;
+}
+.main .buttonRow .buttonStart {
+  width: 200px !important;
+  height: 50px !important;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.showMain {
+  display: none;
+}
+
+.first {
+  display: none;
+  height: 80vh;
+}
+.first .firstRow {
+  height: 35%;
+}
+.first .firstRow .buttonFirst {
+  width: 200px !important;
+  height: 50px !important;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.showFirst {
+  display: block;
+}
+
+.second {
+  display: none;
+  height: 80vh;
+}
+.second .secondRow {
+  height: 50%;
+}
+.second .secondRow .buttonCake {
+  width: 300px;
+  height: 250px;
+}
+
+.showSecond {
+  display: block;
+}
+
+footer {
+  width: 100%;
+}
+footer img {
+  width: 20px;
+}
+footer label {
+  font-size: 1em;
+}
+footer .footer {
+  width: 100%;
+  height: 100px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+footer .footerLine {
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 10px;
+}

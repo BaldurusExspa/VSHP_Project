@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cake Tutorial</title>
+        <link rel="shortcut icon" href="/images/cake-light.png">
+        <link id="linkCss" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body id="body">
+        <header id="header" class="p-3">
+            <div class="header-container container p-0 d-flex justify-content-center align-items-center">
+                <a href="index.html"><label id="textHeader">Cake<img id="logoHeaderImg"></label></a>
+            </div>
+        </header>
+        <main>
+            <div id="main" class="main container p-2">
+                <div class="row flex-wrap">
+                    <div class="col-12">
+                        <h1 id="welcome" class="welcome mt-4 d-flex justify-content-center align-items-center">Добро пожаловать на туториал по созданию тортиков!</h1>
+                    </div>
+                </div>
+                <div class="row buttonRow mt-5">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button onclick="MainChange()" class="btn buttonStart" type="button">Начать</button>
+                    </div>
+                </div>
+            </div>
+            <div id="first" class="first container p-2">
+                <div class="firstRow row p-2">
+                    <div class="col-12 d-flex justify-content-center align-items-end">
+                        <div class="animated">
+                            <h1 id="textAnimed">Тортики состаят из нексольких слоёв, давайте же выберем основание!</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="firstRow row p-2">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button onclick="FirstChange()" class="btn buttonFirst" type="button">Продолжить!</button>
+                    </div>
+                </div>
+            </div>
+            <div id="second" class="second container p-2">
+                <div class="secondRow row p-2">
+                    <div class="col-6 d-flex justify-content-center align-items-center"><button class="buttonCake btn" type="button"></button></div>
+                    <div class="col-6 d-flex justify-content-center align-items-center"><button class="buttonCake btn" type="button"></button></div>
+                </div>
+                <div class="secondRow row p-2">
+                    <div class="col-6 d-flex justify-content-center align-items-center"><button class="buttonCake btn" type="button"></button></div>
+                    <div class="col-6 d-flex justify-content-center align-items-center"><button class="buttonCake btn" type="button"></button></div>
+                </div>
+            </div>
+        </main>
+        <footer class="p-1 pt-0">
+            <div id="footer" class="footer flex-wrap container p-2 d-flex justify-content-center align-items-center">
+                <div id="footerLine" class="footerLine"></div>
+                <label id="text" class="text mb-1">©Cake<img id="logoFooterImg">, 2024</label>
+            </div>
+        </footer>
+    </body>
+    <script src="function.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>

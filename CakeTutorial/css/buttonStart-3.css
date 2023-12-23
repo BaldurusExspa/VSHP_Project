@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+:root {
+  --header-color-1: #FFFFFF;
+  --header-color-2: #FFA1DB;
+  --header-color-3: #421A09;
+  --text-header-color-1: #000000;
+  --text-color-1: #000000;
+  --text-color-2: #000000;
+  --text-color-3: #FFFFFF;
+  --element-main-color-1: #FFFFFF;
+  --element-main-color-2: #FFA1DB;
+  --element-main-color-3: #421A09;
+  --element-advanced-color-1: #97E6E9;
+  --element-advanced-color-2: #EDE0FF;
+  --element-advanced-color-3: #762F10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main .main .buttonRow .buttonStart {
+  background-color: var(--element-main-color-3) !important;
+  color: var(--text-color-3);
+}
+main .first .firstRow .buttonFirst {
+  background-color: var(--element-main-color-3);
+  color: var(--text-color-3);
+}
