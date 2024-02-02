@@ -2,36 +2,27 @@ package ru.zelenskiy.testserverapp2.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DBConnection {
-    private static final String TAG = "mysql-javabase-DBConnectionUtils";
-    private static final String driver = "com.mysql.jdbc.Driver";
-    private static String dbName = "javabase";
-    private static String user = "root";
-    private static String password = "";
-    public static Connection getConn(){
-
+    private static String url = "jdbc:mysql://publicapis.sunday-projects.ru:33063/main";
+    private static String username = "root";
+    private static String password = "1234";
+    private static String Driver = "com.mysql.cj.jdbc.Driver";
+    public static Connection getConn() {
         Connection connection = null;
         try {
-            Class.forName(driver);
-            String ip = "localhost";
+            Class.forName(Driver);
+            connection = DriverManager.getConnection(url, username, password);
+        } catch (ClassNotFoundException e) {
 
-            connection = DriverManager.getConnection("jdbc:mysql://" + ip + ":3306/" + dbName + user + password);
-
-        } catch (Exception e) {
             e.printStackTrace();
+        } catch (SQLException e) {
 
+            e.printStackTrace();
         }
-
         return connection;
-
-        /* Старый вариант подключения -
-        public static Connection getConnection() throws SQLException {
-            return DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD); */
-
-        /*    private static final String DB_URL = "jdbc:mysql://localhost/javabase";
-            private static final String DB_USER = "root";
-            private static final String DB_PASSWORD = ""; //5uujWR2z */
     }
 }

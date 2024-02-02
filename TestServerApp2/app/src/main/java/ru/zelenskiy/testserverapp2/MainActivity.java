@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),register.class));
     }
 
-
     /**
      *Function: login
      * */

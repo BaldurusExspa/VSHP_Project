@@ -29,7 +29,7 @@ public class UserDao {
         int msg = 0;
         try {
 
-            String sql = "select * from user where userAccount = ?";
+            String sql = "SELECT * FROM user WHERE userAccount = ?";
             if (connection != null) {
                 PreparedStatement ps = connection.prepareStatement(sql);
                 if (ps != null){
@@ -91,7 +91,7 @@ public class UserDao {
         Connection connection = DBConnection.getConn();
 
         try {
-            String sql = "insert into user(userAccount,userPassword,userName,userType,userState,userDel) values (?,?,?,?,?,?)";
+            String sql = "INSERT INTO user(userAccount,userPassword,userName,userType,userState,userDel) values (?,?,?,?,?,?)";
             if (connection != null) {
                 PreparedStatement ps = connection.prepareStatement(sql);
                 if (ps != null){
@@ -126,14 +126,13 @@ public class UserDao {
 
     /**
      *Function: check whether the user exists according to the account number
-     * */
+     **/
     public User findUser(String userAccount) {
-
 
         Connection connection = DBConnection.getConn();
         User user = null;
         try {
-            String sql = "select * from user where userAccount = ?";
+            String sql = "SELECT * FROM user WHERE userAccount = ?";
             if (connection != null) {
                 PreparedStatement ps = connection.prepareStatement(sql);
                 if (ps != null) {
