@@ -1,1 +1,0 @@
-Информация - https://developerknow.com/android-studio-connects-to-mysql-and-completes-simple-login-and-registration-functions/
