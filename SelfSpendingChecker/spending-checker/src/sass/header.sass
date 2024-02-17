@@ -1,10 +1,18 @@
-Container
-    width: 100%
-    height: 170px
-    background-color: #050409
+@import './Root.css'
 
-.accountBtn
-    width: 50px
-    height: 50px
-    background-color: #ffffff
-    border-radius: 20%
+
+.header
+    white-space: nowrap
+    display: flex
+    height: 80px
+    background-color: var(--bgc-header)
+    .header-row
+        height: 100%
+        .header-btn
+            width: 50px
+            height: 50px
+            border-radius: 25px
+            background-color: var(--text-color-white)
+            border: none
+        .header-btn:active
+            background-color: var(--bgc-header)

@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+:root {
+  --bgc-header: #0d0d15;
+  --bgc-btn: #242430;
+  --bgc-main-content: #242430;
+  --bgc-leftbar: #060078;
+  --text-color-black: #000000;
+  --text-color-white: #ffffff;
+  --focus-ring-color: #ffffff00;
+}

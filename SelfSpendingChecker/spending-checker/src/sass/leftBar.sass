@@ -1,8 +1,15 @@
-.leftBar
-    width: 200px
+@import './Root.css'
+
+.leftbar
+    width: 100%
     height: 100%
-    background-color: #030F3E
-    .Button
+    background-color: var(--bgc-leftbar)
+    .leftbar-btn
         width: 100%
-        height: 150px
-        background-color: #020305
+        height: 75px
+        font-size: 1.2em
+        border-radius: 0px
+        border: none
+        background-color:  var(--bgc-leftbar)
+    .leftbar-btn:active
+        background-color: var(--bgc-btn)
