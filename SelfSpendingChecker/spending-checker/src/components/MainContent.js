@@ -2,27 +2,47 @@ import React, {useState} from "react";
 import { Container, Row, Col, Button, Form, InputGroup, Dropdown, DropdownButton} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Main from "./Main";
+import Main, { ExspencesBlock, IncomeBlock } from "./Main";
 import LeftBar from "./LeftBar";
+import Header from "./Header";
 
-export default class MainContent extends React.Component {
-
-    render () {
+class MainContent extends React.Component {
+    render() {
         return (
-            <Container fluid className="p-0 main-content">
-                    <Row>
-                        <Col lg={2} xl={2} xxl={2} className="px-0">
-                            <LeftBar />
-                        </Col>
+        <>
+            <Header />
 
-                        <Col lg={10} xl={10} xxl={10} className="px-0">
-                            <Main />
-                        </Col>
-                    </Row>
-                </Container>
+            <Container fluid className="p-0 main-content">
+                <Row>
+                    <Col lg={2} xl={2} xxl={2} className="px-0">
+                        <LeftBar />
+                    </Col>
+
+                    <Col lg={10} xl={10} xxl={10} className="px-0">
+                        {this.props.children || <p>Content</p>}
+                    </Col>
+                </Row>
+            </Container>
+        </> 
         )
     }
 }
+
+const ExspencesView = () => (
+    <MainContent>
+        <ExspencesBlock/>
+    </MainContent>
+)
+
+const IncomeView = () => (
+    <MainContent>
+        <IncomeBlock/>
+    </MainContent>
+)
+
+export {ExspencesView, IncomeView, MainContent}
+
+
 
 //     constructor(props) {
 //         super(props);
